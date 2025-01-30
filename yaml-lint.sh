@@ -20,7 +20,6 @@ if [ -z "$YAML_FILES" ]; then
 fi
 
 # Run yamllint on each YAML file
-EXIT_CODE=0
 for FILE in $YAML_FILES; do
     echo "Linting $FILE"
     yamllint "$FILE"
