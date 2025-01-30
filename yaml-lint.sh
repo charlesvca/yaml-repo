@@ -24,3 +24,4 @@ for FILE in $YAML_FILES; do
     echo "Linting $FILE"
     yamllint "$FILE"
 done
+echo "Finished yaml linting"
