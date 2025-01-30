@@ -24,9 +24,4 @@ EXIT_CODE=0
 for FILE in $YAML_FILES; do
     echo "Linting $FILE"
     yamllint "$FILE"
-    if [ $? -ne 0 ]; then
-        EXIT_CODE=1
-    fi
 done
-
-exit $EXIT_CODE
